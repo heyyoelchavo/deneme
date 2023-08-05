@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kayıt Paneli</title>
+  <style>
+    body {
+      background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fdownloadwap.com%2Fthumbs2%2Fandroid%2Fthumbs%2Fnew%2F9%2Fanime-girl-wallpapers-hd-4.jpg&tbnid=mEyH4kGzNVZqSM&vet=12ahUKEwib7tXFycWAAxWE-KQKHXVfClgQMygTegUIARDhAQ..i&imgrefurl=https%3A%2F%2Ftr.phoneky.com%2Fandroid%2F%3Fid%3Dd1d100160&docid=hfL7M7jHZJ6jmM&w=533&h=300&q=anime%20k%C4%B1z%C4%B1%20wallpaper%20jpg&ved=2ahUKEwib7tXFycWAAxWE-KQKHXVfClgQMygTegUIARDhAQ");
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      margin: 100px auto;
+    }
+    h2 {
+      text-align: center;
+    }
+    label, input, button {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 15px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .message {
+      text-align: center;
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Kayıt Ol</h2>
+    <form id="registrationForm">
+      <label for="username">Kullanıcı Adı:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="email">E-posta:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">Şifre:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <label for="confirmPassword">Şifre Tekrar:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+      
+      <button type="button" id="registerButton">Kayıt Ol</button>
+    </form>
+    
+    <div class="message" id="message"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
